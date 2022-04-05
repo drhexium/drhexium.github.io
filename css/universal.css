@@ -2021,3 +2021,10 @@ li .shop-cart {
     background-position: -40000px 0; } }
 
 /*# sourceMappingURL=universal.css.map */
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 90%;
+   max-width:1200px;
+  }
+}
