@@ -90,16 +90,6 @@
         });
 
         /***********************************************
-         * Tabs
-         ***********************************************/
-
-        $('#myTabs a').click(function (e) {
-            e.preventDefault()
-            $(this).tab('show')
-        })
-
-
-        /***********************************************
          * jQuery for page scrolling feature
          ***********************************************/
 
@@ -139,58 +129,6 @@
         }).parent().addClass('active');
 
         /***********************************************
-         * Countdown
-         ***********************************************/
-
-        $('#clock').countdown('2017/01/21 11:00:00').on('update.countdown', function (event) {
-            var $this = $(this).html(event.strftime(''
-                + '<div><span>%-w</span>week%!w</div>'
-                + '<div><span>%-d</span>day%!d</div>'
-                + '<div><span>%H</span>hr</div>'
-                + '<div><span>%M</span>min</div>'
-                + '<div><span>%S</span>sec</div>'));
-        });
-
-        $('#clock2').countdown('2017/03/22 12:00:00').on('update.countdown', function (event) {
-            var $this = $(this).html(event.strftime(''
-                + '<div><span>%-w</span>week%!w</div>'
-                + '<div><span>%-d</span>day%!d</div>'
-                + '<div><span>%H</span>hr</div>'
-                + '<div><span>%M</span>min</div>'
-                + '<div><span>%S</span>sec</div>'));
-        });
-        $('#clock3').countdown('2017/04/25 13:00:00').on('update.countdown', function (event) {
-            var $this = $(this).html(event.strftime(''
-                + '<div><span>%-w</span>week%!w</div>'
-                + '<div><span>%-d</span>day%!d</div>'
-                + '<div><span>%H</span>hr</div>'
-                + '<div><span>%M</span>min</div>'
-                + '<div><span>%S</span>sec</div>'));
-        });
-        $('#clock4').countdown('2017/05/27 14:00:00').on('update.countdown', function (event) {
-            var $this = $(this).html(event.strftime(''
-                + '<div><span>%-w</span>week%!w</div>'
-                + '<div><span>%-d</span>day%!d</div>'
-                + '<div><span>%H</span>hr</div>'
-                + '<div><span>%M</span>min</div>'
-                + '<div><span>%S</span>sec</div>'));
-        });
-
-        /***********************************************
-         * Carousel
-         ***********************************************/
-
-        $('.carousel-big').carousel({
-            interval: 6500, //changes the speed
-            pause: "false"
-        })
-
-        $('.carousel-small').carousel({
-            interval: 5000, //changes the speed
-            pause: "false"
-        })
-
-        /***********************************************
          * HTML5 Placeholder
          ***********************************************/
 
@@ -205,30 +143,6 @@
         new WOW().init();
 
         /***********************************************
-         * Circle Chart
-        ***********************************************/
-
-        var el = $('.circle'),
-            inited = false;
-        el.appear({ force_process: true });
-        el.on('appear', function() {
-            if (!inited) {
-                el.circleProgress();
-                inited = true;
-            }
-        });
-
-        $('.circle').circleProgress({
-                size:100,
-                fill: {color: "#333"},
-                startAngle: 300,
-                animation: {duration: 4000}
-            })
-            .on('circle-animation-progress', function (event, progress, stepValue) {
-                $(this).find('span').text((stepValue * 100).toFixed(1));
-            });
-
-        /***********************************************
          * Progress Bar
          ***********************************************/
 
@@ -237,42 +151,6 @@
             each_bar_width = $(this).attr('aria-valuenow');
             $(this).width(each_bar_width + '%');
         });
-
-        /***********************************************
-         *  Swipe box
-         ***********************************************/
-
-        ;( function( $ ) {
-
-            /* Basic Gallery */
-
-            $( '.swipebox' ).swipebox( {
-                useCSS : true, // false will force the use of jQuery for animations
-                useSVG : false, // false to force the use of png for buttons
-                hideCloseButtonOnMobile : false, // true will hide the close button on mobile devices
-                hideBarsDelay : 0, // delay before hiding bars on desktop
-                videoMaxWidth : 1140, // videos max width
-                loopAtEnd: false, // true will return to the first image after the last image is reached
-                autoplayVideos: true // true will autoplay Youtube and Vimeo videos
-            } );
-
-            /* Video */
-
-            $( '.swipebox-video' ).swipebox();
-
-        } )( jQuery );
-
-        // addition for swipebox, closing img on click on bg
-        jQuery(function(){
-            jQuery(document.body)
-                .on('click touchend','#swipebox-slider .current img', function(e){
-                    return false;
-                })
-                .on('click touchend','#swipebox-slider .current', function(e){
-                    jQuery('#swipebox-close').trigger('click');
-                });
-        });
-
 
         /***********************************************
          *  jQuery Animated Number
