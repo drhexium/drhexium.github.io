@@ -252,8 +252,8 @@ a img:hover {
   background: rgba(0, 0, 0, 0.7);
 }
 
-.overlay-purple {
-  background: rgba(10, 0, 20, 0.7);
+.overlay-blue {
+  background: rgba(0, 0, 20, 0.7);
 }
 
 .overlay-white {
@@ -262,7 +262,7 @@ a img:hover {
 
 .overlay,
 .overlay-gray,
-.overlay-purple,
+.overlay-blue,
 .overlay-white {
   width: 100%;
   height: 100%;
