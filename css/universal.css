@@ -1241,8 +1241,7 @@ a.btn-nav .btn {
 .bg-img3,
 .bg-img4,
 .bg-img5,
-.bg-img6,
-.bg-img7 {
+.bg-img6 {
   color: #fff !important;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
@@ -1272,7 +1271,7 @@ a.btn-nav .btn {
 }
 
 .bg-img7 {
-  background: url(../img/ADV6231_background.png);
+  background: url(../img/ADV6231_background_light.png);
 }
 
 .bg-img,
@@ -1299,7 +1298,6 @@ a.btn-nav .btn {
 .bg-img4 a,
 .bg-img5 a,
 .bg-img6 a,
-.bg-img7 a,
 .bg-primary a {
   color: #fff;
 }
