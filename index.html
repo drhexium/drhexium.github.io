@@ -96,6 +96,99 @@
     </div>
   </section>
 
+  <!-- Mission / Vision / Values-->
+  <section id="mission" class="section-small bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="img/mission.svg" alt="" class="img-responsive" style="width: 120px">
+        </div>
+        <div class="col-sm-9">
+          <h3 style="margin-bottom: 15px;">Mission</h3>
+          <div id="mission_basic" style="display: inline;">
+            <p>To be a leading fabless semiconductor company focused on delivering exceptional wireless connectivity
+              solutions that elevate the way people and devices communicate.
+              <ion-icon name="chevron-down-outline" onclick="expand_mission()" class="btn btn-gray btn-xs"></ion-icon>
+            </p>
+          </div>
+          <div id="mission_extra" style="display: none;">
+            <p style="margin-bottom: 15px;">To be a leading fabless semiconductor company focused on delivering exceptional wireless connectivity
+              solutions that elevate the way people and devices communicate.
+            </p>
+            <p style="margin-bottom: 15px;">Through relentless innovation, strategic partnerships, and a
+              commitment to customer
+              success, we create advanced, high-performance products that address the ever-changing needs of the global
+              market.</p>
+            <p style="margin-bottom: 15px;">We foster a culture of sustainable innovation and integrity and are committed to collaboration and
+              growth.</p>
+            <p style="margin-bottom: 15px;">Ultimately, we aim to generate long-term value for our stakeholders and build a brighter, more
+              connected future where the wireless connectivity experience transcends boundaries, fostering progress and
+              inclusivity for individuals, businesses, and societies worldwide. <ion-icon name="chevron-up-outline"
+                onclick="contract_mission()" class="btn btn-gray btn-xs"></ion-icon></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="img/vision.svg" alt="" class="img-responsive" style="width: 120px">
+        </div>
+        <div class="col-sm-9">
+          <h3 style="margin-bottom: 15px;">Vision</h3>
+          <div id="vision_basic" style="display: inline;">
+            <p>To become a global leader in wireless connectivity, forging a seamless and limitless world through
+              cutting-edge semiconductor technology. <ion-icon name="chevron-down-outline" onclick="expand_vision()"
+                class="btn btn-gray btn-xs"></ion-icon></p>
+          </div>
+          <div id="vision_extra" style="display: none;">
+            <p style="margin-bottom: 15px;">To become a global leader in wireless connectivity, forging a seamless and limitless world through
+              cutting-edge semiconductor technology.</p>
+            <p style="margin-bottom: 15px;">We aspire to harness
+              the power of semiconductor technology to create a world where wireless connectivity is truly omnipresent
+              and accessible to all. </p>
+            <p style="margin-bottom: 15px;">We envisage to be the global pioneer in designing and delivering state-of-the-art
+              wireless connectivity solutions that transform the way people live, work, and communicate. <ion-icon
+                name="chevron-up-outline" onclick="contract_vision()" class="btn btn-gray btn-xs"></ion-icon></p>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="img/values.svg" alt="" class="img-responsive" style="width: 120px">
+        </div>
+        <div class="col-sm-9">
+          <h3 style="margin-bottom: 15px;">Values</h3>
+          <div id="values_basic" style="display: inline;">
+            <ul style="padding-left: 15px; margin-bottom: 0px;">
+              <li><b>Passion for innovation</b></li>
+              <li><b>Fostering growth and diversity</b></li>
+              <li><b>Effectiveness through collaboration</b> <ion-icon name="chevron-down-outline"
+                  onclick="expand_values()" class="btn btn-gray btn-xs"></ion-icon></li>
+            </ul>
+          </div>
+          <div id="values_extra" style="display: none;">
+            <ul style="padding-left: 15px; margin-bottom: 0px;">
+              <li style="margin-bottom: 15px;"><b>Passion for innovation -</b> Passionately we create unique quality products with exceptional value.
+                Through
+                creative processes and with dedication to superior results, we develop products that stand out in the
+                market.</li>
+              <li style="margin-bottom: 15px;"><b>Fostering growth and diversity -</b> We nurture an environment of diversity and growth, where
+                people work
+                on what they really love, develop, challenge and learn from each other. We build trustworthy
+                relationships, respect each other and work seamlessly together with integrity.</li>
+              <li style="margin-bottom: 15px;"><b>Effectiveness through collaboration -</b> We are committed to satisfying our stakeholders' needs
+                and
+                relentlessly striving to achieve our targets. Through flexibility and productive collaboration, and by
+                finding alternative ways of approaching our challenges and tasks, we enhance efficiencies and achieve
+                the end-result. <ion-icon name="chevron-up-outline" onclick="contract_values()"
+                  class="btn btn-gray btn-xs"></ion-icon></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Our expertise Section-->
   <section id="expertise">
     <div class="container text-center">
@@ -209,10 +302,12 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <h3>Join our team</h3>
-          <p>We are continually seeking talented and driven individuals across various fields. Please refer to the list of our current open positions below.</p>
-            <div id="BambooHR" data-domain="adveos.bamboohr.com" data-version="1.0.0" data-departmentId=""></div><script src=https://adveos.bamboohr.com/js/embed.js type="text/javascript" async defer></script>
-            <br>
-            <p>By providing your info, you agree to our <a href="gdpr.html"><b>GDPR Privacy Policy</b></a></p>
+          <p>We are continually seeking talented and driven individuals across various fields. Please refer to the list
+            of our current open positions below.</p>
+          <div id="BambooHR" data-domain="adveos.bamboohr.com" data-version="1.0.0" data-departmentId=""></div>
+          <script src=https://adveos.bamboohr.com/js/embed.js type="text/javascript" async defer></script>
+          <br>
+          <p>By providing your info, you agree to our <a href="gdpr.html"><b>GDPR Privacy Policy</b></a></p>
         </div>
       </div>
     </div>
@@ -412,7 +507,8 @@
 
           <h4>Innovative Digital Transmitter of Integrated Systems – HIDIT</h4>
 
-          <p>ADVEOS participates in <b>HIDIT</b>, a research program on innovative digital transmitter architectures. The
+          <p>ADVEOS participates in <b>HIDIT</b>, a research program on innovative digital transmitter architectures.
+            The
             project includes the implementation in 28 nm CMOS technology, of an innovative fully digital
             transmitter (all-digital transmitter) for low-energy wireless protocols such as Bluetooth LE, Zigbee. The
             proposed
