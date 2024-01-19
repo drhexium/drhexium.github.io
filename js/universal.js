@@ -114,6 +114,30 @@
         })
 
         /***********************************************
+        * Circle Chart
+        ***********************************************/
+
+        var el = $('.circle'),
+            inited = false;
+        el.appear({ force_process: true });
+        el.on('appear', function () {
+            if (!inited) {
+                el.circleProgress();
+                inited = true;
+            }
+        });
+
+        $('.circle').circleProgress({
+            size: 100,
+            fill: { color: "#ff1628" },
+            startAngle: 300,
+            animation: { duration: 2000 }
+        })
+            .on('circle-animation-progress', function (event, progress, stepValue) {
+                $(this).find('span').text((stepValue * 100).toFixed(1));
+            });
+
+        /***********************************************
          * Closes the Responsive Menu on Menu Item Click in One Page Nav
          ***********************************************/
 
